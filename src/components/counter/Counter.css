@@ -1,0 +1,7 @@
+.row h2{
+    text-shadow: 3px 3px rgb(235, 189, 196);
+}
+.row p{
+    font-size: 35px;
+    font-weight: 500;
+}
