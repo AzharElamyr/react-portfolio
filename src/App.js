@@ -8,6 +8,7 @@ import ProductDetails from "./views/productdetails/ProductDetails";
 import About from "./views/about/About";
 import Home from "./views/home/Home";
 import Erorr from "./views/erorr/Erorr";
+import TodoList from "./views/todo/Todo";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                 <Route path="/products" element={<Products/>} />
                 <Route path="/products/:id" element={<ProductDetails/>}></Route>
                 <Route path="/about" element={<About/>}></Route>
+                <Route path="/todo" element={<TodoList/>}></Route>
                 <Route path="*" element={<Erorr/>}></Route>
             </Routes>
         </BrowserRouter>

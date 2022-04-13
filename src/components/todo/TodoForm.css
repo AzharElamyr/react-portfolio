@@ -1,0 +1,31 @@
+
+.ToDoForm{
+    border: 2px solid black;
+    border-radius: 12px;
+    margin: auto;
+    width:60%;
+    padding: 20px;
+}
+
+input{
+    border-radius: 10px;
+    padding: 5px;
+}
+
+h1{
+    text-shadow: 4px 4px #8d2276;
+    font-weight: bolder;
+
+}
+
+textarea{
+    border-radius: 10px;
+    resize: none;
+}
+
+form > .btn{
+    border-radius: 10px;
+    font-weight: bold;
+    color:black;
+    border: 1px solid black;
+}

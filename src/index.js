@@ -3,13 +3,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {store} from './redux/index';
+import {Provider} from "react-redux";
 
 function AppWithCallbackAfterRender() {
     useEffect(() => {
         console.log('rendered');
     });
 
-    return <App tab="home" />
+ 
+    return <Provider store={store}>
+             <App tab="home" />
+           </Provider>
 }
 const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container);
