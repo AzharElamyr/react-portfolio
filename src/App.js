@@ -9,7 +9,7 @@ import About from "./views/about/About";
 import Home from "./views/home/Home";
 import Erorr from "./views/erorr/Erorr";
 import TodoList from "./views/todo/Todo";
-
+import Login from "./views/form/Form";
 function App() {
     return (
         <BrowserRouter>
@@ -21,6 +21,7 @@ function App() {
                 <Route path="/products/:id" element={<ProductDetails/>}></Route>
                 <Route path="/about" element={<About/>}></Route>
                 <Route path="/todo" element={<TodoList/>}></Route>
+                <Route path="/login" element={<Login/>}></Route>
                 <Route path="*" element={<Erorr/>}></Route>
             </Routes>
         </BrowserRouter>
